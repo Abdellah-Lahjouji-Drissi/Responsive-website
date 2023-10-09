@@ -13,8 +13,30 @@
 --primary-font: "Poppins" , sans-serif;
 --second-font: "Montserrat" , sans-serif;
 
-
     
+--font-size-smaller:1.4rem;
+--font-size-small:1.6rem;
+--font-size-normal:1.8rem;
+--font-size-big:2.4rem;
+--font-size-biggest:4.4rem;
+
+--font-regular:400;
+--font-medium:500;
+--font-semi-bold:600;
+--font-bold:700;
+
 
 
  }
+
+ *  , *::before , *::after{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ html{
+    font-size: 62.5%;
+ }
+
+
