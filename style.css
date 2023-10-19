@@ -26,6 +26,14 @@
 --font-bold:700;
 
 
+--shadow-header: 0 4px 20px 16px rgba(0,0,0 ,0.05);
+--border-radius-sm:1.5rem;
+--border-radius-lg:30rem;
+--trasition: all .4s;
+
+
+
+
 
  }
 
@@ -38,5 +46,6 @@
  html{
     font-size: 62.5%;
  }
+
 
 
