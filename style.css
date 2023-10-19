@@ -45,7 +45,42 @@
 
  html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
  }
 
+h1,h2,h3,h4{
+  color: var(--color-title);
+  font-weight: var(--font-bold);
 
+}
 
+ul{
+  list-style: none;
+
+}
+
+a{
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+input, textarea , input{
+  outline: hidden;
+  font: inherit;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+
+}
+
+main{
+  overflow: hidden;
+
+}
