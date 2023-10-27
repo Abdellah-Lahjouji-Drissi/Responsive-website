@@ -26,12 +26,17 @@
 --font-bold:700;
 
 
---shadow-header: 0 4px 20px 16px rgba(0,0,0 ,0.05);
+--shadow-header: 0 4px 20px 16px rgba(0,0,0 ,0.05); 
 --border-radius-sm:1.5rem;
 --border-radius-lg:30rem;
 --transition: all .4s;
 
 
+
+--width-container: 98rem;
+--height-header:10rem;
+--zindex-menu:100;
+--zindex-fixed:110;
 
 
 
@@ -83,6 +88,52 @@ button{
 main{
   overflow: hidden;
 
+}
+
+.section{
+  padding: 10rem 0 8rem;
+}
+
+.section-header{
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.section-title{
+  font-size: var(--font-size-biggest);
+  margin-bottom: 5rem;
+}
+
+
+.container{
+  width: 90%;
+  margin: auto;
+  max-width: var(--width-container);
+}
+
+.grid{
+  display: grid;
+  gap: 3rem;
+}
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+  padding: 2rem 3.5rem;
+  border-radius: var(--border-radius-sm);
+  font-weight: var(--font-bold);
+  font-size: var(--font-size-smaller);
+}
+
+.btn-primary{
+  background-color: var(--color-primary);
+  color: var(--color-background);
+}
+
+.btn-primary:hover{
+  background-color: var(--color-primary-dark);
 }
 
 body{
