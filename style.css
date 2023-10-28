@@ -144,4 +144,58 @@ body{
   margin-top: var(--height-header);
 }
 
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-background);
+  position: flex;
+  align-items: center;
+  height: var(--height-header);
+  z-index: var(--zindex-menu);
+  transition: var(--transition);
+  
+}
 
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-icons{
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.nav-shop{
+  background-color: var(--color-primary);
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .5rem;
+  font-size: 2rem;
+  color: var(--color-background);
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-shop-number{
+  position: absolute;
+  background-color: var(--color-red);
+  right: -20%;
+  top: -20%;
+  border-radius: 50%;
+  color: var(--color-title);
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-smaller);
+  font-weight: var(--font-semi-bold);
+}
