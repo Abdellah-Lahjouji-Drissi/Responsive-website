@@ -142,6 +142,7 @@ body{
   font-weight: var(--font-regular);
   background-color: var(--color-background);
   margin-top: var(--height-header);
+  color: var(--color-text);
 }
 
 header{
@@ -198,4 +199,52 @@ header{
   align-items: center;
   font-size: var(--font-size-smaller);
   font-weight: var(--font-semi-bold);
+}
+
+
+.nav-close , .nav-open{
+  font-size: 2.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+
+}
+
+.nav-close:hover , .nav-open:hover{
+  color: var(--color-primary);
+}
+
+.nav-list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  align-items: center;
+}
+
+.nav-link{
+  position: relative;
+  color: var(--color-title);
+  font-size: var(--font-size-smaller);
+  transition: var(--transition);
+
+}
+
+.nav-link::before {
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  background-color: var(--color-primary);
+  transition: var(--transition);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -0.6rem;
+
+}
+
+.nav-link:hover , .nav-link-active{
+  color: var(--color-primary);
+}
+
+.nav-link:hover::before , .nav-link-active::before{
+  width: 80%;
 }
