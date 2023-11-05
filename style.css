@@ -151,7 +151,7 @@ header{
   left: 0;
   right: 0;
   background-color: var(--color-background);
-  position: flex;
+  display: flex;
   align-items: center;
   height: var(--height-header);
   z-index: var(--zindex-menu);
@@ -247,4 +247,33 @@ header{
 
 .nav-link:hover::before , .nav-link-active::before{
   width: 80%;
+}
+
+@media screen and (max-width:48rem) {
+  .nav-menu{
+          background-color: var(--color-background);
+          box-shadow: var(--shadow-header);
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: var(--zindex-fixed);
+          transition: var(--transition);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 8rem 0;
+
+  }
+
+  .nav-open{
+    top:0;
+
+  }
+
+  .nav-close{
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+  }
 }
