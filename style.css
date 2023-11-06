@@ -116,6 +116,10 @@ main{
   gap: 3rem;
 }
 
+.header-scroll{
+  box-shadow: var(--shadow-header);
+}
+
 .btn{
   display: inline-flex;
   align-items: center;
@@ -254,7 +258,7 @@ header{
           background-color: var(--color-background);
           box-shadow: var(--shadow-header);
           position: fixed;
-          top: 0;
+          top: -100%;
           left: 0;
           right: 0;
           z-index: var(--zindex-fixed);
@@ -269,6 +273,10 @@ header{
   .nav-open{
     top:0;
 
+  }
+
+  .nav-menu-open{
+    top: 0;
   }
 
   .nav-close{
